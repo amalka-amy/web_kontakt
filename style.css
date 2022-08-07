@@ -1,0 +1,343 @@
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter', sans-serif; }
+}
+
+
+/*  global layout  */
+body{
+    margin:0px;
+    text-align: center;
+    background-color: #C7C7C7;
+}
+h2{
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    font-size: 20px;
+    font-weight: 700; 
+}
+p,td{
+    font-size: 15px;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 7%;
+    font-weight: 300;
+}
+body img{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: auto;
+    display:block;
+}
+a{
+    font-style: normal;
+    color: black;
+    text-decoration-line: none;
+}
+
+@media (min-width: 600px){
+
+    h2{
+        font-size: 30px;
+        padding-top:7%;
+    }
+    p,td {
+        font-size:18px;
+        font-weight: 400;
+    }
+}
+
+
+/* header */
+header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    gap: 0px;
+    align-items: center;
+    position:fixed;
+    top:0%;
+    background-color:#FFDA5E;
+    outline: 2px black solid;
+    width: 100%;
+}
+
+#a_obrazek,
+#obrazek{
+    grid-column: 1/2;
+    display: block;
+}
+
+header button{
+    width: 90px;
+    height: 30px;
+    background-color: #C7C7C7;
+    text-align: center;
+    border-radius: 20px;
+    border:0px;
+}
+
+button:hover{
+    border: 0px;
+    cursor: pointer;
+    
+}
+
+#button_kontakt{
+    display:none;
+
+}
+
+#button_e-shop{
+    background-color: #CA2827;
+    grid-column: 2/3;
+    margin-left: 35% ;
+    margin-right: auto;
+}
+
+header p{
+    font-size: 15px;
+    text-align: center;
+    margin:0px;
+    padding:0px;
+    line-height:20px;
+}
+
+@media (min-width: 600px){
+
+    header{
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        width: 100%;
+        height: 100px;
+        outline: 3px black solid;
+    }
+
+    header button{
+        height:40px;
+        width:100px;
+    }
+    #a_obrazek,
+    #obrazek{
+        grid-column: 1/2;
+        max-height: max-content;
+    }
+    #button_kontakt{
+        grid-column: 3/4;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #button_e-shop{
+        grid-column: 4/5;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+        
+}
+
+@media (min-width: 850px){
+    header{
+        grid-template-columns: 1fr 2fr 1fr 1fr;
+        width: 100%;
+        height: 100px;
+    }
+    header img {
+        max-width: max-content;
+    }
+    header button{
+        height:50px;
+        width:120px;  
+        border-radius: 60px;
+    }
+}
+
+/* sections */
+section{
+    padding-bottom: 0px;
+    border:0px;
+    margin:0px;
+}
+
+#co_najdete,
+#o_nas{
+    background-color: #C7C7C7 ;
+}
+#kontakt,
+#kariera{
+    background-color: #FFDA5E;
+}
+
+.vetsi_padding_top{
+    padding-top: 45px;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7%;
+
+}
+
+td{
+    padding: 4px;
+}
+
+.den{
+    font-weight: 700 ;
+}
+
+.adresa p{
+    margin: 5px;
+    padding-bottom: 2px;
+}
+.adresa div{
+    margin-bottom: 30px;
+}
+
+#kariera{
+    padding: 0px;
+}
+#kariera h2{
+    padding-top:10%;
+    padding-bottom:10%;
+    margin:0%;
+}
+
+@media (min-width: 600px){
+
+   #co_najdete{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px;
+        padding-top:100px;
+    }
+
+    #soucastky{
+        grid-column: 1/2;
+        grid-row-start: 1/2;
+        display:block;
+        object-fit: cover;
+        min-height: 400px;
+    }
+
+    #co_u_nas_najdete{
+        grid-column: 2/3;
+        grid-row:1/2;
+        display:block;
+        margin-top:auto;
+        margin-bottom:auto;
+
+    }
+
+    #oteviraci_doba{
+        grid-column: 1/2;
+        grid-row:2/3;
+        display:block;
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+
+    #letadlo{
+        grid-column: 2/3;
+        grid-row:2/3;
+        min-height: 400px;
+        display: block;
+        object-fit: cover;
+    }
+
+    #kontakt{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 800px;
+    }
+
+    #mapa{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        min-height: 800px;
+        object-fit: cover;
+        padding-top: 0px;
+    }
+
+    #kontakt_parkovani{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display:block;
+        margin-top:auto;
+        margin-bottom:auto;
+        
+    }
+
+
+    #o_nas{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 800px;
+        justify-content: center;
+        align-content: center;
+        padding-top:0px;
+    }
+
+    #o_nas_odstavec{
+        grid-column: 1/2;
+        grid-row: auto;
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+    #obchod{
+        grid-column: 2/3;
+        min-height: 800px;
+        grid-row: 1/2;
+        display:block;
+        object-fit: cover;
+    }
+
+    #kariera{
+        text-align: center;
+    }
+        
+}
+
+
+
+
+/* footer */
+footer p{
+    background-color: black;
+    color:white;
+    font-size: 10px;
+    padding-top:5%;
+    padding-bottom: 2%;
+    margin: 0px;
+}
+#zasady p{
+    padding-top: 10px;
+    padding-bottom: 5%;
+    color:gray;
+}
+
+
+
+
+@media (min-width: 600px){
+
+    footer p{
+        background-color: black;
+        color:white;
+        font-size: 10px;
+        padding-top:2%;
+        padding-bottom: 1%;
+        margin: 0px;
+    }
+    #zasady p{
+        padding-top: 5px;
+        padding-bottom: 2%;
+        color:gray;
+    }
+
+
+        
+}
