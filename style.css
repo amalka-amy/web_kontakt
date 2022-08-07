@@ -20,15 +20,15 @@ p,td{
     font-size: 15px;
     padding-left:10%;
     padding-right: 10%;
-    padding-bottom: 7%;
+    padding-bottom: 5%;
     font-weight: 300;
 }
 body img{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
     width: 100%;
     height: auto;
-    display:block;
+    display: block;
 }
 a{
     font-style: normal;
@@ -92,7 +92,7 @@ button:hover{
 #button_e-shop{
     background-color: #CA2827;
     grid-column: 2/3;
-    margin-left: 35% ;
+    margin-left: auto ;
     margin-right: auto;
 }
 
@@ -123,15 +123,16 @@ header p{
         max-height: max-content;
     }
     #button_kontakt{
+        margin-left: auto ;
+        margin-right: auto;
         grid-column: 3/4;
         display:block;
-        margin-left:auto;
-        margin-right:auto;
     }
     #button_e-shop{
+        margin-left: auto ;
+        margin-right: auto;
+
         grid-column: 4/5;
-        margin-left:auto;
-        margin-right:auto;
     }
 
         
@@ -151,61 +152,83 @@ header p{
         width:120px;  
         border-radius: 60px;
     }
+    #button_kontakt{
+        grid-column: 3/4;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    #button_e-shop{
+        grid-column: 4/5;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
 }
 
 /* sections */
-section{
-    padding-bottom: 0px;
-    border:0px;
-    margin:0px;
-}
+@media (min-width: 0px){
 
-#co_najdete,
-#o_nas{
-    background-color: #C7C7C7 ;
-}
-#kontakt,
-#kariera{
-    background-color: #FFDA5E;
-}
 
-.vetsi_padding_top{
-    padding-top: 45px;
-}
+    section{
+        padding-bottom: 0px;
+        border:0px;
+        margin:0px;
+    }
 
-table{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7%;
+    #co_najdete,
+    #o_nas{
+        background-color: #C7C7C7 ;
+    }
+    #kontakt,
+    #kariera{
+        background-color: #FFDA5E;
+    }
 
-}
+    .vetsi_padding_top{
+        padding-top: 100px;
+    }
 
-td{
-    padding: 4px;
-}
+    table{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7%;
 
-.den{
-    font-weight: 700 ;
-}
+    }
 
-.adresa p{
-    margin: 5px;
-    padding-bottom: 2px;
-}
-.adresa div{
-    margin-bottom: 30px;
-}
+    td{
+        padding: 4px;
+    }
 
-#kariera{
-    padding: 0px;
-}
-#kariera h2{
-    padding-top:10%;
-    padding-bottom:10%;
-    margin:0%;
-}
+    .den{
+        font-weight: 700 ;
+    }
 
+    .adresa p{
+        margin: 5px;
+        padding-bottom: 2px;
+    }
+    .adresa div{
+        margin-bottom: 30px;
+    }
+
+    #kariera{
+        padding: 0px;
+    }
+    #kariera h2{
+        padding-top:10%;
+        padding-bottom:10%;
+        margin:0%;
+    }
+    #letadlo{
+        padding-bottom: 0px;
+    }
+    #kontakt_parkovani h2{
+        margin:0px;
+    }
+}
 @media (min-width: 600px){
 
    #co_najdete{
@@ -220,7 +243,7 @@ td{
         grid-row-start: 1/2;
         display:block;
         object-fit: cover;
-        min-height: 400px;
+        height: 400px;
     }
 
     #co_u_nas_najdete{
@@ -244,6 +267,7 @@ td{
         grid-column: 2/3;
         grid-row:2/3;
         min-height: 400px;
+        max-height: 400px;
         display: block;
         object-fit: cover;
     }
@@ -252,6 +276,7 @@ td{
         display:grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 800px;
+        background-color: #FFDA5E;
     }
 
     #mapa{
@@ -279,12 +304,13 @@ td{
         justify-content: center;
         align-content: center;
         padding-top:0px;
+
     }
 
     #o_nas_odstavec{
         grid-column: 1/2;
         grid-row: auto;
-        margin-top:auto;
+        margin-top:0px;
         margin-bottom:auto;
     }
     #obchod{
@@ -301,9 +327,6 @@ td{
         
 }
 
-
-
-
 /* footer */
 footer p{
     background-color: black;
@@ -318,9 +341,6 @@ footer p{
     padding-bottom: 5%;
     color:gray;
 }
-
-
-
 
 @media (min-width: 600px){
 
